@@ -1,0 +1,235 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*CSS*/
+html{
+  padding: 0px;
+  border: 0px;
+  height: 100%;
+}
+body{
+  width: 100%;
+  padding: 0px;
+  border: 0px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
+/*選取行政區*/
+.select{
+  height: 380px;
+  text-align: center;
+  background-image: url(../assets/Hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.select-title{
+  width: 100%;
+  display: inline-block;
+  margin-top: 89px;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 3.89px;
+  font-family: .PingFangTC-Regular;
+}
+.select-ad{
+  width: 100%;
+  margin-top: 96px;
+  font-size: 18px;
+  background: rgba(255,255,255,0.70);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  width: 452px;
+  height: 48px;
+}
+
+/*熱門行政區*/
+.hot-ad{
+  margin: -28px auto 0px auto;
+  display: block;
+  height: 112px;
+  width: 800px;
+  text-align: left;
+  padding-left: 26px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+  border-radius: 5px;
+}
+.hot-ad-title{
+  font-family: .AppleSystemUIFont;
+  display: inline-block;
+
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
+}
+.hot-ad-ads{
+
+}
+.hot-btn{
+  height: 42px;
+  width: 130px;
+  float:left;
+  margin: 15px 13px;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 5px;
+  font-family: .PingFangTC-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+
+/*Down-Line*/
+.down-line{
+  margin: 49px auto 0px auto;
+  max-width: 900px;
+  z-index: 10;
+  border: 1px dashed #559AC8;
+}
+.down-icon{
+  width: 24px;
+  height: 12px;
+  color: #559AC8;
+  font-size: 13px;
+  padding: 7px 1px 7px 1px;
+  margin: -16px auto 0px auto;
+  z-index: 11;
+  border: 2px solid #559AC8;
+  border-radius: 70px;
+  background-color: #EEEEEE;
+}
+
+/*列表Title*/
+.sub-title{
+  margin: 65px auto 0px auto;
+  font-family: .SFNSDisplay;
+  font-size: 36px;
+  color: #8A82CC;
+  letter-spacing: 3.89px;
+  text-align: center;
+}
+
+/*列表*/
+.ad-list{
+  width: 1024px;
+  margin: 10px auto;
+  padding: 0px 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.card{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.ad-location{
+  height: 273px;
+  margin: 18px 8px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+.ad-location-img{
+  width: 100%;
+  height: 155px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ad-location-img h3{
+  width: 50%;
+  margin-top: 117px;
+  margin-left: 22px;
+  text-align: left;
+  display: inline-block;
+  font-family: .SFNSDisplay;
+  font-size: 24px;
+  color: #FFFFFF;
+  float: left;
+}
+.ad-location-img p{
+  width: 30%;
+  margin-top: 125px;
+  margin-right: 22px;
+  text-align: right;
+  font-family: .PingFangTC-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  float: right;
+}
+.ad-location-info{
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 23px;
+  text-align: left;
+  font-family: .AppleSystemUIFont;
+  font-size: 16px;
+  color: #000000;
+  float: left;
+}
+.ad-location-info li{
+  margin-top: 5px;
+  vertical-align: middle;
+}
+.ad-location-free{
+  width: 20%;
+  margin-top: 80px;
+  margin-right: 23px;
+  text-align: left;
+  font-family: .PingFangTC-Regular;
+  font-size: 16px;
+  color: #000000;
+  float: right;
+}
