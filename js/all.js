@@ -44,7 +44,7 @@ function createCard(event){
     }
   }
   document.querySelector('.sub-title').textContent = location;
-  document.querySelector('.ad-list').innerHTML = str;
+  document.querySelector('.area-list').innerHTML = str;
 }
 
 addToList();
