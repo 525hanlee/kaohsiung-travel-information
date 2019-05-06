@@ -1,7 +1,6 @@
 var data = mydata.result.records;
 var selectAd = document.querySelector('.select-ad');
 var btn = document.querySelectorAll('.hot-btn');
-console.log(data);
 
 function addToList(){
   var str = '';
