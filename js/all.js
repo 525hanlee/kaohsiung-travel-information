@@ -20,10 +20,12 @@ function createCard(event){
   var str = '';
   if (location == '--請選擇行政區--') {return;}
   for (var i = 0; i < data.length; i++) {
+    var url = data[i].Picture1;
+    url = url.replace("http", "https");
     if (data[i].Zone == location) {
       str +='<div class="card">';
       str +='<div class="ad-location">';
-      str +='<div class="ad-location-img" style="background-image: url('+data[i].Picture1+');">';
+      str +='<div class="ad-location-img" style="background-image: url('+url+');">';
       str +='<h3>'+data[i].Name+'</h3>';
       str +='<p>'+data[i].Zone+'</p>';
       str +='</div>';
