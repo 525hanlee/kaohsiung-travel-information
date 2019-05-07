@@ -2,6 +2,7 @@ var data = mydata.result.records;
 var selectAd = document.querySelector('.select-ad');
 var btn = document.querySelectorAll('.hot-btn');
 
+//加入行政區到列表
 function addToList(){
   var str = '';
   var zone = [];
@@ -15,6 +16,7 @@ function addToList(){
   selectAd.innerHTML = str;
 }
 
+//創建景點卡片
 function createCard(event){
   var location = event.target.value;
   var str = '';
@@ -47,14 +49,11 @@ function createCard(event){
   document.querySelector('.area-list').innerHTML = str;
 }
 
+//初始化
 addToList();
-
-selectAd.addEventListener('change',function(event){
-  var location = event.target.value;
-
-  createCard(event);
-});
-
+//偵測到改變觸發函式
+selectAd.addEventListener('change',createCard);
+//掛監聽到按鈕
 for (var i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click',createCard);
 }
