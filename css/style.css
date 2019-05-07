@@ -189,7 +189,7 @@ body{
   background-size: cover;
 }
 .area-location-img h3{
-  width: 380px;
+  width: 80%;
   margin-top: 117px;
   margin-left: 22px;
   text-align: left;
@@ -200,7 +200,7 @@ body{
   float: left;
 }
 .area-location-img p{
-  width: 73px;
+  width: 10%;
   margin-top: 125px;
   margin-right: 22px;
   text-align: right;
