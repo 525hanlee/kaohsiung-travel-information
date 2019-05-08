@@ -1,5 +1,5 @@
 var data = mydata.result.records;
-var selectAd = document.querySelector('.select-ad');
+var selectArea = document.querySelector('.select-ad');
 var btn = document.querySelectorAll('.hot-btn');
 
 function addToList(){
@@ -12,7 +12,7 @@ function addToList(){
       str += '<option>'+data[i].Zone+'</option>';
     }
   }
-  selectAd.innerHTML = str;
+  selectArea.innerHTML = str;
 }
 
 function createCard(event){
@@ -49,7 +49,7 @@ function createCard(event){
 
 addToList();
 
-selectAd.addEventListener('change',function(event){
+selectArea.addEventListener('change',function(event){
   var location = event.target.value;
 
   createCard(event);
