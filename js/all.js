@@ -52,7 +52,7 @@ function createCard(event){
 //初始化
 addToList();
 //偵測到改變觸發函式
-selectAd.addEventListener('change',createCard);
+selectArea.addEventListener('change',createCard);
 //掛監聽到按鈕
 for (var i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click',createCard);
