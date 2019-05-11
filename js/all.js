@@ -1,13 +1,13 @@
-var data = mydata.result.records;
-var selectAd = document.querySelector('.select-ad');
-var btn = document.querySelectorAll('.hot-btn');
+const data = mydata.result.records;
+const selectAd = document.querySelector('.select-ad');
+const btn = document.querySelectorAll('.hot-btn');
 
 //加入行政區到列表
 function addToList(){
-  var str = '';
-  var zone = [];
+  let str = '';
+  let zone = [];
   str += '<option>--請選擇行政區--</option>';
-  for(var i = 0;i < data.length; i++){
+  for(let i = 0;i < data.length; i++){
     if(zone.indexOf(data[i].Zone) == -1){
       zone.push(data[i].Zone);
       str += '<option>'+data[i].Zone+'</option>';
@@ -18,11 +18,11 @@ function addToList(){
 
 //創建景點卡片
 function createCard(event){
-  var location = event.target.value;
-  var str = '';
+  const location = event.target.value;
+  let str = '';
   if (location == '--請選擇行政區--') {return;}
-  for (var i = 0; i < data.length; i++) {
-    var url = data[i].Picture1;
+  for (let i = 0; i < data.length; i++) {
+    let url = data[i].Picture1;
     url = url.replace("http", "https");
     if (data[i].Zone == location) {
       str +='<div class="card">';
@@ -54,6 +54,6 @@ addToList();
 //偵測到改變觸發函式
 selectAd.addEventListener('change',createCard);
 //掛監聽到按鈕
-for (var i = 0; i < btn.length; i++) {
+for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click',createCard);
 }
