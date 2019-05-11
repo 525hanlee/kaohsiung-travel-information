@@ -1,5 +1,5 @@
 var data = mydata.result.records;
-var selectAd = document.querySelector('.select-ad');
+var selectArea = document.querySelector('.select-ad');
 var btn = document.querySelectorAll('.hot-btn');
 
 //加入行政區到列表
@@ -13,7 +13,7 @@ function addToList(){
       str += '<option>'+data[i].Zone+'</option>';
     }
   }
-  selectAd.innerHTML = str;
+  selectArea.innerHTML = str;
 }
 
 //創建景點卡片
